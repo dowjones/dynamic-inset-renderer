@@ -1,0 +1,44 @@
+.dynamicInset:after {
+  display:block;
+  content:" ";
+  clear:both;
+}
+
+.inset+.share ul {
+  list-style-type:none;
+  padding:0;
+}
+
+.inset+.share>ul>li {
+  float:left;
+}
+
+.inset+.share .insetIcon {
+  width:24px;
+  height:24px;
+  display:block;
+  text-indent:-9999em;
+}
+
+.inset+.share .insetIcon {
+  background-size: 24px 24px;
+}
+.inset+.share .insetTwitterIcon {
+  background-image:url(//dynamic-inset-assets.herokuapp.com/images/icon_20940.png);
+}
+.inset+.share .insetFacebookIcon {
+  background-image:url(//dynamic-inset-assets.herokuapp.com/images/icon_40254.png);
+}
+.inset+.share .insetEmbedIcon {
+  background-image:url(//dynamic-inset-assets.herokuapp.com/images/icon_5484.png);
+}
+
+.inset+.share code {
+  background-color:white;
+  padding:10px;
+  box-shadow: 0 0 5px #888888;
+  margin-left:5px;
+  width:400px;
+  display:block;
+  position:absolute;
+}
