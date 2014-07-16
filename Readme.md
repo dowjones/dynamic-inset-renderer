@@ -1,4 +1,4 @@
-#Dynamic Inset JS Embed Widget
+#Dynamic Inset Javascript Renderer
 ##Client-Side Rendering Application
 
 This repository illustrates the functionality of using dynamic insets and client-side rendering.
