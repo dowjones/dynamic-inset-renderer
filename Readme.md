@@ -2,7 +2,7 @@
 ##Client-Side Rendering Application
 
 This repository illustrates the functionality of using dynamic insets and client-side rendering.
-The client-side renderer implements the [https://docs.google.com/document/d/1NQ0UZYnyq89RFg3-Y7WxmYr7qVhsVBIrNPDpmgF66JA/edit?usp=sharing](dynamic inset) specification.
+The client-side renderer implements the [dynamic inset](https://docs.google.com/document/d/1NQ0UZYnyq89RFg3-Y7WxmYr7qVhsVBIrNPDpmgF66JA/edit?usp=sharing) specification.
 
 ###Example
 [http://dynamic-inset-renderer.herokuapp.com](http://dynamic-inset-renderer.herokuapp.com)
@@ -12,16 +12,16 @@ To use a dynamic inset, construct the appropriate script tag and place it in any
 ```html
 <script data-inset-url="//dynamic-inset-assets.herokuapp.com/data/inset.json" src="http://dynamic-inset-assets.herokuapp.com/javascripts/embed.js" class="js-embed" ></script>
 ```
-The client-side dynamic inset renderer is used by placing a simple script tag in a standard html page, with three attributes:
-* `data-inset-url` specifies where the remote inset.json file is located
-* `src` points to the inset rendering javascript file
-* `class="js-embed"` is used to help identify insets to be processed
+The client-side dynamic inset renderer is used by placing a simple script tag in a standard html page, with 3 attributes:
+1. data-inset-url specifies where the remote inset.json file is located
+1. src points to the inset rendering javascript file
+1. class="js-embed" is used to help identify insets to be processed
 
 On page-load, with these three attributes, the inset embed script runs.
 
 ###Embed script
 The embed script referenced in the above script tag runs immediately, requests a new remote script and injects it into the head of the current document.
-If multiple instances of the script tag are used on the same page, only one copy of the remote script is fetched and used.
+If multiple instances of the script tag are used on the smae page, only one copy of the remote script is fetched and used.
 
 ```javascript
 (function(){

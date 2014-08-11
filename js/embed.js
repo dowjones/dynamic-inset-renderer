@@ -1,2 +1,2 @@
-/*! 2014-08-11 19:03:12 */
+/*! 2014-08-11 19:07:25 */
 !function(){if(0===document.getElementsByClassName("js-embed-enabled").length){var a=document.createElement("script");a.setAttribute("src","//dynamic-inset-renderer.herokuapp.com/js/script.js"),a.setAttribute("type","text/javascript"),a.setAttribute("async","true"),document.getElementsByTagName("head")[0].appendChild(a).classList.add("js-embed-enabled")}}();
