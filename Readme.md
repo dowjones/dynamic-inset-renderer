@@ -2,10 +2,10 @@
 ##Client-Side Rendering Application
 
 This repository illustrates the functionality of using dynamic insets and client-side rendering.
+The client-side renderer implements the [https://docs.google.com/document/d/1NQ0UZYnyq89RFg3-Y7WxmYr7qVhsVBIrNPDpmgF66JA/edit?usp=sharing](dynamic inset) specification.
 
 ###Example
 [http://dynamic-inset-renderer.herokuapp.com](http://dynamic-inset-renderer.herokuapp.com)
-
 
 ###Usage
 To use a dynamic inset, construct the appropriate script tag and place it in any html page.
