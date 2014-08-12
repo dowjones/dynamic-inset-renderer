@@ -10,7 +10,7 @@ The client-side renderer implements the [dynamic inset](https://docs.google.com/
 ###Usage
 To use a dynamic inset, construct the appropriate script tag and place it in any html page.
 ```html
-<script data-inset-url="//dynamic-inset-assets.herokuapp.com/data/inset.json" src="http://dynamic-inset-assets.herokuapp.com/javascripts/embed.js" class="js-embed" ></script>
+<script data-inset-url="//dynamic-inset-assets.herokuapp.com/data/inset.json" src="http://dynamic-inset-renderer.herokuapp.com/release/js/embed.js" class="js-embed" ></script>
 ```
 The client-side dynamic inset renderer is used by placing a simple script tag in a standard html page, with 3 attributes:
 1. data-inset-url specifies where the remote inset.json file is located
@@ -24,6 +24,7 @@ The embed script referenced in the above script tag runs immediately, requests a
 If multiple instances of the script tag are used on the smae page, only one copy of the remote script is fetched and used.
 
 ```javascript
+//un-minified
 (function(){
   if(document.getElementsByClassName('js-embed-enabled').length === 0){
     var script = document.createElement('script');
