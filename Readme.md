@@ -14,8 +14,8 @@ To use a dynamic inset, construct the appropriate script tag and place it in any
 ```
 The client-side dynamic inset renderer is used by placing a simple script tag in a standard html page, with 3 attributes:
 1. data-inset-url specifies where the remote inset.json file is located
-1. src points to the inset rendering javascript file
-1. class="js-embed" is used to help identify insets to be processed
+2. src points to the inset rendering javascript file
+3. class="js-embed" is used to help identify insets to be processed
 
 On page-load, with these three attributes, the inset embed script runs.
 
