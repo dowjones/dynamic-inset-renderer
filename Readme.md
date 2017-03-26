@@ -1,13 +1,13 @@
-#Dynamic Inset Javascript Renderer
-##Client-Side Rendering Application
+# Dynamic Inset Javascript Renderer
+## Client-Side Rendering Application
 
 This repository illustrates the functionality of using dynamic insets and client-side rendering.
 The client-side renderer implements the [dynamic inset](https://docs.google.com/document/d/1NQ0UZYnyq89RFg3-Y7WxmYr7qVhsVBIrNPDpmgF66JA/edit?usp=sharing) specification.
 
-###Example
+### Example
 [http://dynamic-inset-renderer.herokuapp.com](http://dynamic-inset-renderer.herokuapp.com)
 
-###Usage
+### Usage
 To use a dynamic inset, construct the appropriate script tag and place it in any html page.
 ```html
 <script data-inset-url="//dynamic-inset-assets.herokuapp.com/data/inset.json" src="http://dynamic-inset-renderer.herokuapp.com/release/js/embed.js" class="js-embed" ></script>
@@ -19,7 +19,7 @@ The client-side dynamic inset renderer is used by placing a simple script tag in
 
 On page-load, with these three attributes, the inset embed script runs.
 
-###Embed script
+### Embed script
 The embed script referenced in the above script tag runs immediately, requests a new remote script and injects it into the head of the current document.
 If multiple instances of the script tag are used on the smae page, only one copy of the remote script is fetched and used.
 
@@ -38,7 +38,7 @@ If multiple instances of the script tag are used on the smae page, only one copy
 
 Once the remote script is loaded, each script tag on the page with a data-inset-url attribute is processed.
 
-###Initial html example
+### Initial html example
 ```html
 <!DOCTYPE html>
 <html>
@@ -51,7 +51,7 @@ Once the remote script is loaded, each script tag on the page with a data-inset-
 </html>
 ```
 
-###Rendered inset example
+### Rendered inset example
 The data-inset-url attribute is read, the remote referenced asset is requested, and assuming it conforms to the inset.json spec, it is rendered around the instantiating script tag.
 ```html
 <html>
